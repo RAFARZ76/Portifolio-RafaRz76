@@ -20,6 +20,17 @@ body{
    background-size: cover;
 }
 
+/* Ocultar a barra de rolagem do Chrome, Safari e Opera */
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Ocultar barra de rolagem para IE, Edge e Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
 header{
     width: 100%;
     height: 80px;
