@@ -517,7 +517,7 @@ header .btn-mobile{
     width: 100%;
     max-width: 100%;
     border-radius: 50%;
-    margin-left: 840px;
+    margin-left: 620px;
     margin-top: 255px;
   
 }
@@ -550,7 +550,11 @@ footer a{
 /*===== Resposive =====*/
 
 @media screen and (max-width: 1280px){
-    #home .container .icons ion-icon{
+    #home .container .title{
+        text-align:left;
+        margin-right: 10px;
+     }
+      #home .container .icons ion-icon{
         font-size: 1.5rem;
     }
     #port .container .card h1{
