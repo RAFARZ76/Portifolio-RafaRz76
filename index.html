@@ -1,280 +1,61 @@
-/* Importar fonte do google*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+<!DOCTYPE html>
+<html lang="pt">
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-  
-}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RafaRz76 - Desenvolvendo para o Futuro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-html{
-    scroll-behavior: smooth; /*Para quando clicar ir suave para página desejada.*/
-}
-  
-body{
-    width: 100%;
-    height: 100vh;   
-   background: url(image/CREATIVE_3.png);
-   background-size: cover;
-}
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/Cartão Apresentação.png">
+        </div>
 
-/* Ocultar a barra de rolagem do Chrome, Safari e Opera */
-body::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Ocultar barra de rolagem para IE, Edge e Firefox */
-  body {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+        <div class="menu"> /*itens menu*/
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#port">Projetos</a></li>
+                <li><a href="#cvtitle">CVTitle</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#port">Projetos</a></li>
+                <li><a href="#cvtitle">CVTitle</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+        <div class="btn-mobile">
+            <ion-icon name="grid-outline"></ion-icon>
+        </div>
+    </header>
 
-header{
-    width: 100%;
-    height: 80px;
-    background: rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: fixed;
-    z-index: 99;
-   
-}
-header .logo{
-    width: 50%;
-    margin-top: 70px;
-}
-
-header .logo img{
-    width: 170px;
-    margin-left: 30px;
-    
-}
-
-.logo img:hover{
-  transform: scale(1.3); /* Aumenta quando passa o mouse*/
-}
-
-header .menu ul{
-    display: flex;
-}
-header .menu ul li{
-    padding: 0 20px;
-    list-style: none;
-}
-header .menu ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    transition: 0.5s ease;
-}
-header .menu ul li a:hover{
-    color: #156fc3;
-}
-header .menu-mobile{
-    display: none;
-    margin-left: 180px;
-}
-header .btn-mobile{
-    display: none;
-    
-}
-
-/*===== Main Home(Inicio)*/
-
-#home .container{
-    width: 100%;
-    height: 100vh;
-    background: url(image/perfil_computer.png);
-  
-}
-
-#home .container .icons{
-    width: 10%;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 60px;
-    position: fixed;
-    z-index: 999;
-    margin-top:80px;
+      <!-- Inicio -->
+      <main id="home">
+        <div class="container">
+            <div class="icons">
+                <a href="https://github.com/RAFARZ76">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/rafael-raizer/">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="https://public.tableau.com/app/profile/rafael.raizer">
+                    <ion-icon name="logo-tableau"></ion-icon>
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=47999327137&text&app_absent=0">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </div>
 
 
-}
-#home .container .icons ion-icon{
-    padding: 30px 0;
-    font-size: 2rem;
-    color: #fff;
-    transition: 0.5s ease;
-}
-
-#home .container .icons ion-icon:hover{
-    color: #156fc3;
-}
-
-#home .container .title{
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 0 60px;
-}
-
-#home .container .title h1{
-   
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 4rem;
-    letter-spacing: 2px;
-    margin-left: 34px;
-    margin-top: 110px;  
-}
-
-#home .container .title p{
-    color:#fff;
-    position: absolute;
-    z-index: 9;
-    width: 400px;
-    text-align: right;
-    margin-left: 30px;
-    margin-top: 700px; 
-    letter-spacing: 6px;
- 
-}
-
-/*===== Responsive =====*/
-
-@media screen and (max-width: 1280px){
-    #home .container .title{
-        text-align:left;
-        margin-right: 10px;
-     }
-      #home .container .icons ion-icon{
-        font-size: 1.5rem;
-    }
-    #port .container .card h1{
-        font-size: 5rem;
-    }
-    #port .container .card p{
-        width: 280px;
-        font-size: 0.8rem;
-    }
-}
- 
- @media screen and (max-width: 960px){
-    body{
-        background: url(image/CREATIVE_3.png);
-    }
-    header{
-        background: none;
-    }
-    header .logo{
-        width: 600px;
-    }
-    header .menu{
-        display: none;
-    }
-    header .btn-mobile{
-        display: block;
-    }
-    header .btn-mobile ion-icon {
-        color: #fff;
-        font-size: 1.5rem;
-    }
-    header .menu-mobile{ 
-        width: 30%;
-        height: 40vh; /* Altura da janela com visualização*/
-        box-shadow: 0 0 15px 0 rgba(21,111,195,0.5);
-        position: fixed;
-        top: 20px;
-        border-radius: 10px;
-        background: #156fc3;
-        margin-left: 250px;       
-    }
-    header .menu-mobile ul{
-        text-align: center;
-    }
-    header .menu-mobile ul li{
-        list-style: none;
-        padding: 12px 0;
-    }
-    header .menu-mobile ul li a{
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #fff;
-    }
-    #home .container .icons{
-        padding: 0 20px;
-    }
-    #home .container .title{
-        align-items: center;
-    }
-    #home .container .title h1{
-        font-size: 4rem;
-    }
-   
-    #about .container .title{
-        align-items: center;
-    }
-    
-    #contact .container .content-contact{
-        width: 100%;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-       
-        
-    }
-    #contact .content-contact .contact-left h1{
-        font-size: 1.5rem;      
-        
-    }
-    #contact .content-contact .contact-left ion-icon{
-        font-size: 1.5rem;
-        padding: 5px 0;     
-     
-    }
-    #contact .content-contact .contact-left span{
-        font-size: 1rem;
-        padding: 5px 0;
-    }
-}
-
-@media screen and (max-width: 750px){
-    header{
-        padding: 10px;
-    }
-
-    #home .container .title{
-        align-items: center;
-    }
-    #home .container .title h1{
-        font-size: 4rem;
-        letter-spacing: 30px;
-    }
-     
-    #about .container .title{
-        padding: 10px 60px;
-    }
-    #about .container .title h4{
-        width: 100%;
-        margin-top: 30px;
-
-    }
-    #port .container .card{
-        width: 70%;
-        height: 70%;
-      
-    }
-    .desk{
-        margin-left: -200px;
-        margin-top: 130px;
-      
-    }
- }
+</body>
+</html>
