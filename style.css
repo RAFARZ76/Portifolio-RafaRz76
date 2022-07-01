@@ -650,6 +650,14 @@ footer a{
     header{
         padding: 10px;
     }
+
+    #home .container .title{
+        align-items: center;
+    }
+    #home .container .title h1{
+        font-size: 4rem;
+        letter-spacing: 30px;
+    }
      
     #about .container .title{
         padding: 10px 60px;
@@ -668,30 +676,7 @@ footer a{
         margin-left: -200px;
         margin-top: 130px;
       
-}
+    }
+ }
  
- @media screen and (min-width: 480px){
-        header{
-            padding: 10px;
-        }
-         
-        #about .container .title{
-            padding: 10px 60px;
-        }
-        #about .container .title h4{
-            width: 100%;
-            margin-top: 30px;
-    
-        }
-        #port .container .card{
-            width: 70%;
-            height: 70%;
-          
-        }
-        .desk{
-            margin-left: -200px;
-            margin-top: 130px;
-          
-        }
-   
-}
+
